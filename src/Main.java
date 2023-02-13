@@ -4,8 +4,8 @@ public class Main {
     private static final Employee[] EMPLOYEES = new Employee[10];
 
     public static void main(String[] args) {
-        fillEmployees ();
-        printFullInfo ();
+        fillEmployees();
+        printFullInfo();
         System.out.println("Сумма ЗП " + totalSalaries());
         System.out.println("Сотрудник с мин ЗП " + findEmployeeWithMinSalary());
         System.out.println("Сотрудник с макс ЗП " + findEmployeeWithMaxSalary());
@@ -61,11 +61,11 @@ public class Main {
         return employee;
     }
 
-    private static double fingAvarageSalary () {
+    private static double fingAvarageSalary() {
         return totalSalaries() / (double) EMPLOYEES.length;
     }
 
-    private static void printFullNameInfo () {
+    private static void printFullNameInfo() {
         for (Employee employee : EMPLOYEES) {
             System.out.println(employee.getFullName());
         }
